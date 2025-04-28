@@ -13,7 +13,7 @@ public class CheckDigit
     
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     int checkdigit = getCheck(numWithCheckDigit%10);
+     int checkdigit = getCheck(numWithCheckDigit/10);
      int rightdigit = numWithCheckDigit%10;
      if(checkdigit == rightdigit){
       return true;
